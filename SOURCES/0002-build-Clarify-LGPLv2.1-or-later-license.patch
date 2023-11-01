@@ -1,0 +1,46 @@
+From c0b6cab2ee83b153d450ecb306fcaa2a998ef370 Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Mon, 21 Jun 2021 14:10:33 +0200
+Subject: [PATCH 2/3] build: Clarify LGPLv2.1 or later license
+
+The COPYING file by itself isn't enough to know under which license the
+project is released, as a combined work.
+
+Clarify this in the build system and the README.
+---
+ README.md   | 7 ++++++-
+ meson.build | 2 +-
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/README.md b/README.md
+index de5cfca..1cc8906 100644
+--- a/README.md
++++ b/README.md
+@@ -31,4 +31,9 @@ $ ninja -C build
+ $ sudo ninja -C build install
+ ```
+ 
+-Enjoy!
+\ No newline at end of file
++## License
++
++grilo-plugins is available under the [GNU Lesser General Public License v2.1 or later](https://spdx.org/licenses/LGPL-2.1-or-later.html).
++Check the sources themselves for individual copyrights and licenses.
++
++Enjoy!
+diff --git a/meson.build b/meson.build
+index 5f8c7cd..41bef7b 100644
+--- a/meson.build
++++ b/meson.build
+@@ -12,7 +12,7 @@ project('grilo-plugins', 'c',
+             'c_std=gnu99',
+             'warning_level=1'
+         ],
+-        license: 'LGPL 2.1',
++        license: 'LGPL-2.1-or-later',
+         meson_version: '>= 0.44.0')
+ 
+ plugin_version = meson.project_version()
+-- 
+2.31.1
+

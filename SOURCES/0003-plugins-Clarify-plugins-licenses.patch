@@ -1,0 +1,334 @@
+From 50015c42e216fead3c45b82d22262bcd6b86bc0c Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Mon, 21 Jun 2021 14:31:58 +0200
+Subject: [PATCH 3/3] plugins: Clarify plugins licenses
+
+So that the licenses match that of the project as a whole.
+---
+ src/bookmarks/grl-bookmarks.c           | 2 +-
+ src/chromaprint/grl-chromaprint.c       | 2 +-
+ src/dleyna/grl-dleyna.c                 | 2 +-
+ src/dmap/grl-daap.c                     | 2 +-
+ src/dmap/grl-dpap.c                     | 2 +-
+ src/filesystem/grl-filesystem.c         | 2 +-
+ src/flickr/grl-flickr.c                 | 2 +-
+ src/freebox/grl-freebox.c               | 2 +-
+ src/gravatar/grl-gravatar.c             | 2 +-
+ src/local-metadata/grl-local-metadata.c | 2 +-
+ src/lua-factory/grl-lua-factory.c       | 2 +-
+ src/magnatune/grl-magnatune.c           | 2 +-
+ src/metadata-store/grl-metadata-store.c | 2 +-
+ src/opensubtitles/grl-opensubtitles.c   | 2 +-
+ src/optical-media/grl-optical-media.c   | 2 +-
+ src/podcasts/grl-podcasts.c             | 2 +-
+ src/raitv/grl-raitv.c                   | 2 +-
+ src/shoutcast/grl-shoutcast.c           | 2 +-
+ src/thetvdb/grl-thetvdb.c               | 2 +-
+ src/tmdb/grl-tmdb.c                     | 2 +-
+ src/tracker/grl-tracker.c               | 2 +-
+ src/tracker3/grl-tracker.c              | 2 +-
+ src/youtube/grl-youtube.c               | 2 +-
+ 23 files changed, 23 insertions(+), 23 deletions(-)
+
+diff --git a/src/bookmarks/grl-bookmarks.c b/src/bookmarks/grl-bookmarks.c
+index 9e8db9b..208f5a9 100644
+--- a/src/bookmarks/grl-bookmarks.c
++++ b/src/bookmarks/grl-bookmarks.c
+@@ -168,7 +168,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for organizing media bookmarks",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_bookmarks_plugin_init,
+                    NULL,
+diff --git a/src/chromaprint/grl-chromaprint.c b/src/chromaprint/grl-chromaprint.c
+index 5a3598b..525e613 100644
+--- a/src/chromaprint/grl-chromaprint.c
++++ b/src/chromaprint/grl-chromaprint.c
+@@ -141,7 +141,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin to get metadata using chromaprint framework",
+                    "Victor Toso",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://victortoso.com",
+                    grl_chromaprint_plugin_init,
+                    NULL,
+diff --git a/src/dleyna/grl-dleyna.c b/src/dleyna/grl-dleyna.c
+index ac38175..41a46df 100644
+--- a/src/dleyna/grl-dleyna.c
++++ b/src/dleyna/grl-dleyna.c
+@@ -137,7 +137,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing DLNA servers",
+                    "Intel Corp.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "https://01.org/dleyna",
+                    grl_dleyna_plugin_init,
+                    grl_dleyna_plugin_deinit,
+diff --git a/src/dmap/grl-daap.c b/src/dmap/grl-daap.c
+index 962f2b8..59410fd 100644
+--- a/src/dmap/grl-daap.c
++++ b/src/dmap/grl-daap.c
+@@ -143,7 +143,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                   "A plugin for browsing DAAP servers",
+                   "W. Michael Petullo",
+                    VERSION,
+-                  "LGPL",
++                  "LGPL-2.1-or-later",
+                   "http://www.flyn.org",
+                    grl_daap_plugin_init,
+                    NULL,
+diff --git a/src/dmap/grl-dpap.c b/src/dmap/grl-dpap.c
+index 6339654..f9ba136 100644
+--- a/src/dmap/grl-dpap.c
++++ b/src/dmap/grl-dpap.c
+@@ -148,7 +148,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                   "A plugin for browsing DPAP servers",
+                   "W. Michael Petullo",
+                    VERSION,
+-                  "LGPL",
++                  "LGPL-2.1-or-later",
+                   "http://www.flyn.org",
+                    grl_dpap_plugin_init,
+                    NULL,
+diff --git a/src/filesystem/grl-filesystem.c b/src/filesystem/grl-filesystem.c
+index 7409c76..3006fac 100644
+--- a/src/filesystem/grl-filesystem.c
++++ b/src/filesystem/grl-filesystem.c
+@@ -199,7 +199,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing the filesystem",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_filesystem_plugin_init,
+                    NULL,
+diff --git a/src/flickr/grl-flickr.c b/src/flickr/grl-flickr.c
+index a2a7407..a0b8699 100644
+--- a/src/flickr/grl-flickr.c
++++ b/src/flickr/grl-flickr.c
+@@ -250,7 +250,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing and searching Flickr photos",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_flickr_plugin_init,
+                    NULL,
+diff --git a/src/freebox/grl-freebox.c b/src/freebox/grl-freebox.c
+index b07dc85..23a659a 100644
+--- a/src/freebox/grl-freebox.c
++++ b/src/freebox/grl-freebox.c
+@@ -169,7 +169,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for Freebox TV channels",
+                    "GNOME",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.gnome.org",
+                    grl_freebox_plugin_init,
+                    NULL,
+diff --git a/src/gravatar/grl-gravatar.c b/src/gravatar/grl-gravatar.c
+index bf615f5..58c1109 100644
+--- a/src/gravatar/grl-gravatar.c
++++ b/src/gravatar/grl-gravatar.c
+@@ -126,7 +126,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin to get avatars for artist and author fields",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_gravatar_source_plugin_init,
+                    NULL,
+diff --git a/src/local-metadata/grl-local-metadata.c b/src/local-metadata/grl-local-metadata.c
+index 3fb1d19..d182938 100644
+--- a/src/local-metadata/grl-local-metadata.c
++++ b/src/local-metadata/grl-local-metadata.c
+@@ -110,7 +110,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin that gets simple-to-obtain metadata from the local filesystem",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_local_metadata_source_plugin_init,
+                    NULL,
+diff --git a/src/lua-factory/grl-lua-factory.c b/src/lua-factory/grl-lua-factory.c
+index 3a3b824..5c5206c 100644
+--- a/src/lua-factory/grl-lua-factory.c
++++ b/src/lua-factory/grl-lua-factory.c
+@@ -297,7 +297,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin that creates sources from Lua plugins",
+                    "Victor Toso",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://victortoso.com",
+                    grl_lua_factory_plugin_init,
+                    grl_lua_factory_plugin_deinit,
+diff --git a/src/magnatune/grl-magnatune.c b/src/magnatune/grl-magnatune.c
+index c90d029..a023a01 100644
+--- a/src/magnatune/grl-magnatune.c
++++ b/src/magnatune/grl-magnatune.c
+@@ -214,7 +214,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for searching music",
+                    "Victor Toso",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_magnatune_plugin_init,
+                    NULL,
+diff --git a/src/metadata-store/grl-metadata-store.c b/src/metadata-store/grl-metadata-store.c
+index 9db39e5..199b0ec 100644
+--- a/src/metadata-store/grl-metadata-store.c
++++ b/src/metadata-store/grl-metadata-store.c
+@@ -177,7 +177,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for storing extra metadata information",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_metadata_store_source_plugin_init,
+                    NULL,
+diff --git a/src/opensubtitles/grl-opensubtitles.c b/src/opensubtitles/grl-opensubtitles.c
+index 19963ea..110d9be 100644
+--- a/src/opensubtitles/grl-opensubtitles.c
++++ b/src/opensubtitles/grl-opensubtitles.c
+@@ -158,7 +158,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin that gets a list of subtitles for a video",
+                    "Bastien Nocera",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.hadess.net",
+                    grl_opensubtitles_source_plugin_init,
+                    NULL,
+diff --git a/src/optical-media/grl-optical-media.c b/src/optical-media/grl-optical-media.c
+index 54affe9..c937c40 100644
+--- a/src/optical-media/grl-optical-media.c
++++ b/src/optical-media/grl-optical-media.c
+@@ -169,7 +169,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing optical media",
+                    "GNOME",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.gnome.org",
+                    grl_optical_media_plugin_init,
+                    NULL,
+diff --git a/src/podcasts/grl-podcasts.c b/src/podcasts/grl-podcasts.c
+index 6c91e80..9eaed8e 100644
+--- a/src/podcasts/grl-podcasts.c
++++ b/src/podcasts/grl-podcasts.c
+@@ -317,7 +317,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing podcasts",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_podcasts_plugin_init,
+                    NULL,
+diff --git a/src/raitv/grl-raitv.c b/src/raitv/grl-raitv.c
+index d7009b9..5aeacc3 100644
+--- a/src/raitv/grl-raitv.c
++++ b/src/raitv/grl-raitv.c
+@@ -246,7 +246,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for searching multimedia content using Rai.tv",
+                    "Marco Piazza",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "https://wiki.gnome.org/Projects/Grilo",
+                    grl_raitv_plugin_init,
+                    NULL,
+diff --git a/src/shoutcast/grl-shoutcast.c b/src/shoutcast/grl-shoutcast.c
+index 272f5ce..879ce35 100644
+--- a/src/shoutcast/grl-shoutcast.c
++++ b/src/shoutcast/grl-shoutcast.c
+@@ -167,7 +167,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing SHOUTcast radios",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_shoutcast_plugin_init,
+                    NULL,
+diff --git a/src/thetvdb/grl-thetvdb.c b/src/thetvdb/grl-thetvdb.c
+index a47f5e9..3f9acde 100644
+--- a/src/thetvdb/grl-thetvdb.c
++++ b/src/thetvdb/grl-thetvdb.c
+@@ -290,7 +290,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for fetching metadata of television shows",
+                    "Victor Toso",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://victortoso.com",
+                    grl_thetvdb_plugin_init,
+                    NULL,
+diff --git a/src/tmdb/grl-tmdb.c b/src/tmdb/grl-tmdb.c
+index e195375..70a135e 100644
+--- a/src/tmdb/grl-tmdb.c
++++ b/src/tmdb/grl-tmdb.c
+@@ -201,7 +201,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin to retrieve movie metadata from themoviedb.org",
+                    "Canonical Ltd.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.canonical.com",
+                    grl_tmdb_source_plugin_init,
+                    NULL,
+diff --git a/src/tracker/grl-tracker.c b/src/tracker/grl-tracker.c
+index 96527d1..b69a648 100644
+--- a/src/tracker/grl-tracker.c
++++ b/src/tracker/grl-tracker.c
+@@ -301,7 +301,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for searching multimedia content using Tracker",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_tracker_plugin_init,
+                    grl_tracker_plugin_deinit,
+diff --git a/src/tracker3/grl-tracker.c b/src/tracker3/grl-tracker.c
+index 7a044e0..27fbdef 100644
+--- a/src/tracker3/grl-tracker.c
++++ b/src/tracker3/grl-tracker.c
+@@ -217,7 +217,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for searching multimedia content using Tracker Miners 3.x",
+                    "Igalia S.L.",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_tracker3_plugin_init,
+                    grl_tracker3_plugin_deinit,
+diff --git a/src/youtube/grl-youtube.c b/src/youtube/grl-youtube.c
+index c090565..b28ce1e 100644
+--- a/src/youtube/grl-youtube.c
++++ b/src/youtube/grl-youtube.c
+@@ -299,7 +299,7 @@ GRL_PLUGIN_DEFINE (GRL_MAJOR,
+                    "A plugin for browsing and searching YouTube videos",
+                    "Igalia",
+                    VERSION,
+-                   "LGPL",
++                   "LGPL-2.1-or-later",
+                    "http://www.igalia.com",
+                    grl_youtube_plugin_init,
+                    NULL,
+-- 
+2.31.1
+
